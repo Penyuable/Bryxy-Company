@@ -40,6 +40,39 @@ function PlatformBadges() {
   );
 }
 
+// Placeholder for a project that is not public yet. Pass a title/description
+// once there is something to tease; the defaults keep it generic.
+function ComingSoonCard({
+  title = "Project berikutnya",
+  description = "Sesuatu yang baru sedang kami racik. Tetap pantau Bryxy untuk jadi yang pertama mencobanya.",
+}: {
+  title?: string;
+  description?: string;
+}) {
+  return (
+    <article className="soft-inset relative flex flex-col gap-6 overflow-hidden rounded-[2rem] border-2 border-dashed border-[#e2d6c8] p-7 sm:flex-row sm:items-center sm:p-9">
+      <LottieAccent name="sparkle" className="h-24 w-24 shrink-0" />
+      <div className="min-w-0 flex-1">
+        <span className="inline-flex items-center gap-2 rounded-full bg-[#f8e5d6] px-3 py-1 text-xs font-extrabold uppercase tracking-[0.16em] text-[#b95017]">
+          <span className="relative flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#e87932] opacity-60" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-[#e87932]" />
+          </span>
+          Coming soon
+        </span>
+        <h3 className="mt-4 text-3xl font-black">{title}</h3>
+        <p className="mt-2 max-w-2xl leading-7 text-[#766d63]">{description}</p>
+      </div>
+      <span
+        aria-disabled="true"
+        className="inline-flex shrink-0 cursor-not-allowed items-center gap-2 self-start rounded-full border border-[#e2d6c8] px-5 py-3 text-sm font-bold text-[#a89c90] sm:self-center"
+      >
+        Segera hadir
+      </span>
+    </article>
+  );
+}
+
 export default function Home() {
   return (
     <main className="page-shell">
@@ -190,6 +223,9 @@ export default function Home() {
               Lihat opsi download <ArrowIcon />
             </Link>
           </article>
+          </div>
+          <div data-reveal style={delay(280)} className="lg:col-span-2">
+            <ComingSoonCard />
           </div>
         </div>
       </section>

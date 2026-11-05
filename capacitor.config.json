@@ -1,0 +1,9 @@
+{
+  "appId": "id.bryxy.app",
+  "appName": "Bryxy",
+  "webDir": "out",
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#f4f0e9"
+  }
+}
