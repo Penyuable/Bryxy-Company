@@ -143,7 +143,7 @@ export default function Home() {
               <div className="app-tile rounded-[1.75rem] p-5">
                 <div className="flex justify-between"><MoneyzzMark /><span className="text-xs font-bold text-[#aaa9b8]">01</span></div>
                 <p className="mt-6 text-lg font-extrabold">Moneyzz</p>
-                <p className="mt-1 text-xs leading-5 text-[#89889a]">Keuangan lebih teratur</p>
+                <p className="mt-1 text-xs leading-5 text-[#89889a]">Keuangan lebih teratur dan lebih menyenangkan</p>
               </div>
               <div className="app-tile mt-8 rounded-[1.75rem] p-5">
                 <div className="flex justify-between"><DokiMark /><span className="text-xs font-bold text-[#aaa9b8]">02</span></div>
