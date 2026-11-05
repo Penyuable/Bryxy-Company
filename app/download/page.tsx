@@ -5,9 +5,9 @@ import type { CSSProperties } from "react";
 import LottieAccent from "../components/LottieAccent";
 import { AndroidIcon, AppleIcon } from "../components/icons";
 
-// Doki builds on Google Drive.
+// Doki builds: iOS from GitHub Releases, Android on Google Drive.
 const downloads = {
-  ios: "https://drive.google.com/file/d/1D6tALvQkEBNCkqPerNyu-6jg9cTslh1B/view?usp=drive_link",
+  ios: "https://github.com/Penyuable/Doki/releases/download/ios-latest/dokimon-unsigned.ipa",
   android: "https://drive.google.com/file/d/1uC92s-Dp2ARefOGF8bcj2UxB7A1QkS3v/view?usp=drive_link",
 };
 
@@ -74,7 +74,7 @@ export default function DownloadPage() {
           <p className="mt-7 text-xs font-extrabold uppercase tracking-[0.2em] text-[#c95d1b]">Download center</p>
           <h1 className="mt-3 text-4xl font-black tracking-tight sm:text-6xl">Mulai dari sini.</h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-[#766d63]">
-            Pilih perangkatmu untuk mengunduh Doki melalui Google Drive. Tersedia untuk iOS dan Android.
+            Pilih perangkatmu untuk mengunduh Doki. Tersedia untuk iOS dan Android.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default function DownloadPage() {
         </div>
 
         <div data-reveal className="soft-inset relative mt-8 rounded-2xl px-5 py-4 text-center text-sm leading-6 text-[#887f75]">
-          File akan dibuka melalui Google Drive. Ikuti petunjuk di halaman Drive untuk menyimpan dan memasang aplikasi.
+          Versi iOS diunduh langsung sebagai file .ipa (unsigned) dari GitHub, sedangkan versi Android dibuka melalui Google Drive.
         </div>
 
         <div className="relative mt-14 text-center">

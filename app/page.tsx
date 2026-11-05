@@ -90,6 +90,7 @@ export default function Home() {
         <nav className="hidden items-center gap-8 text-sm font-semibold text-[#766d63] md:flex" aria-label="Navigasi utama">
           <a className="transition hover:text-[#c95d1b]" href="#tentang">Tentang</a>
           <a className="transition hover:text-[#c95d1b]" href="#project">Project</a>
+          <Link className="transition hover:text-[#c95d1b]" href="/employee">Tim</Link>
           <Link className="transition hover:text-[#c95d1b]" href="/download">Download</Link>
         </nav>
         <Link href="/download" className="soft-button inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-[#b95017]">
