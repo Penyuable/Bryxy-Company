@@ -3,29 +3,9 @@ import Image from "next/image";
 import logo from "./img/logo.png";
 import type { CSSProperties } from "react";
 import LottieAccent from "./components/LottieAccent";
-import { AndroidIcon, AppleIcon, ArrowIcon } from "./components/icons";
+import { AndroidIcon, AppleIcon, ArrowIcon, DokiMark, MoneyzzMark } from "./components/icons";
 
 const delay = (ms: number) => ({ "--delay": `${ms}ms` }) as CSSProperties;
-
-function MoneyzzMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 64 64" fill="none" className="h-12 w-12">
-      <rect x="7" y="7" width="50" height="50" rx="18" fill="#E87932" />
-      <path d="M20 24.5c2-3 5.6-4.5 10.8-4.5 6.3 0 10.2 2.3 10.2 6 0 8-17 4-17 12 0 3.7 3.9 6 10.2 6 5.2 0 8.8-1.5 10.8-4.5M32 15v34" stroke="white" strokeWidth="3.6" strokeLinecap="round" />
-    </svg>
-  );
-}
-
-function DokiMark() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 64 64" fill="none" className="h-12 w-12">
-      <rect x="7" y="7" width="50" height="50" rx="18" fill="#78B99A" />
-      <path d="M21 19h15a10 10 0 0 1 0 20H21V19Z" fill="white" />
-      <path d="M21 39h15a7 7 0 0 1 0 14H21V39Z" fill="#E9F5ED" />
-      <path d="m42 19 2.4 4.8 5.3.8-3.8 3.7.9 5.2-4.8-2.5-4.7 2.5.9-5.2-3.8-3.7 5.2-.8L42 19Z" fill="#F6D991" />
-    </svg>
-  );
-}
 
 function PlatformBadges() {
   return (
@@ -203,7 +183,7 @@ export default function Home() {
             <h3 className="mt-7 text-3xl font-black">Moneyzz</h3>
             <p className="mt-3 max-w-lg leading-7 text-[#766d63]">Teman untuk mengatur keuangan harian. Catat uang masuk dan keluar, pantau arus keuangan, dan scan struk belanja dengan praktis.</p>
             <div className="mt-6"><PlatformBadges /></div>
-            <Link href="/download" className="soft-button mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-[#b95017]">
+            <Link href="/download#moneyzz" className="soft-button mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-[#b95017]">
               Lihat opsi download <ArrowIcon />
             </Link>
           </article>
@@ -220,7 +200,7 @@ export default function Home() {
             <h3 className="mt-7 text-3xl font-black">Doki</h3>
             <p className="mt-3 max-w-lg leading-7 text-[#766d63]">Masuk ke dunia permainan kartu bergaya TCG. Susun strategi, kumpulkan kartu, dan nikmati setiap duel bersama Doki.</p>
             <div className="mt-6"><PlatformBadges /></div>
-            <Link href="/download" className="soft-button mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-[#b95017]">
+            <Link href="/download#doki" className="soft-button mt-8 inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-bold text-[#b95017]">
               Lihat opsi download <ArrowIcon />
             </Link>
           </article>

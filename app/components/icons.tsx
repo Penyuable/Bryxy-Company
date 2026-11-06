@@ -16,6 +16,26 @@ export function AppleIcon({ className = "h-4 w-4" }: IconProps) {
   );
 }
 
+export function MoneyzzMark({ className = "h-12 w-12" }: IconProps) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 64 64" fill="none" className={className}>
+      <rect x="7" y="7" width="50" height="50" rx="18" fill="#E87932" />
+      <path d="M20 24.5c2-3 5.6-4.5 10.8-4.5 6.3 0 10.2 2.3 10.2 6 0 8-17 4-17 12 0 3.7 3.9 6 10.2 6 5.2 0 8.8-1.5 10.8-4.5M32 15v34" stroke="white" strokeWidth="3.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function DokiMark({ className = "h-12 w-12" }: IconProps) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 64 64" fill="none" className={className}>
+      <rect x="7" y="7" width="50" height="50" rx="18" fill="#78B99A" />
+      <path d="M21 19h15a10 10 0 0 1 0 20H21V19Z" fill="white" />
+      <path d="M21 39h15a7 7 0 0 1 0 14H21V39Z" fill="#E9F5ED" />
+      <path d="m42 19 2.4 4.8 5.3.8-3.8 3.7.9 5.2-4.8-2.5-4.7 2.5.9-5.2-3.8-3.7 5.2-.8L42 19Z" fill="#F6D991" />
+    </svg>
+  );
+}
+
 export function AndroidIcon({ className = "h-4 w-4" }: IconProps) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className={className}>
